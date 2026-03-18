@@ -13,7 +13,7 @@ def start_session():
     with open('log.txt', 'w', encoding='utf-8') as log:
         log.write("Nuova sessione\n")
 
-llm = ChatOllama(model="llama:3.1:8b", temperature=0)
+llm = ChatOllama(model="llama3.1:8b", temperature=0)
 
 with open("sys_prompt.txt", "r", encoding="utf-8") as f:
     sys_prompt = f.read()
