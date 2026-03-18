@@ -31,6 +31,7 @@ def wolfram_tool(query: str) -> str:
     except:
         with open('log.txt', 'a', encoding='utf-8') as log:
             print("Errore nella chiamata a 'wolfram_tool'", file = log)
+        return "Errore: impossibile eseguire WolframScript."
 
     with open('log.txt', 'a', encoding='utf-8') as log:
         print("="*50, file = log)
